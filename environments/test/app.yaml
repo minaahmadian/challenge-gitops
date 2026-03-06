@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: challenge-app
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/minaahmadian/challenge-app.git
+    targetRevision: main
+    path: chart
+    helm:
+      valueFiles:
+        - ../../environments/test/values.yaml
+  destination:
+    server: https://172.23.22.162:6443
+    namespace: challenge-test
+  syncPolicy:
+    automated: {}
