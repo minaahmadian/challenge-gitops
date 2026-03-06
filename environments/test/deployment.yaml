@@ -14,7 +14,7 @@ spec:
         app: challenge-app
     spec:
       containers:
-      - name: challenge-app
-        image: ghcr.io/minaahmadian/challenge-app:latest
-        ports:
-        - containerPort: 80
+        - name: challenge-app
+          image: ghcr.io/minaahmadian/challenge-app:6c4dd858f5aaa0a5eb810665ae3a7cbb108ad40
+          ports:
+            - containerPort: 80
