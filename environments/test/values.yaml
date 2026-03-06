@@ -1,0 +1,5 @@
+namespace: challenge-test
+
+image:
+  repository: ghcr.io/minaahmadian/challenge-app
+  tag: latest
