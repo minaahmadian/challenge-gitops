@@ -1,2 +1,3 @@
 image:
-  tag: latest
+  repository: ghcr.io/minaahmadian/challenge-app
+  tag: fbe1fa9a804ea320566272d1fc7009be513fa56c
